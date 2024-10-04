@@ -1,0 +1,149 @@
+/* Body */
+body {
+    font-family: 'Lora', serif; 
+    background-color: #1c1c1e; 
+    margin: 0;
+    padding: 0;
+    color: #f4f4f5; 
+  }
+  
+  /* Page container */
+  .page {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #2c2c2e; 
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+  }
+  
+  .page:hover {
+    transform: scale(1.01);
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #d4af37; 
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  /* Input fields */
+  .input-field {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    background-color: #3a3a3c;
+    color: #f4f4f5;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #d4af37; 
+    outline: none;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Create button */
+  .create-btn {
+    background-color: #d4af37; 
+  }
+  
+  .create-btn:hover {
+    background-color: #b08a30;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+  }
+  
+  /* Status buttons */
+  .status-btn {
+    background-color: #c0c0c0; 
+  }
+  
+  .completed-btn {
+    background-color: #5a5a5c; 
+  }
+  
+  .completed-btn:hover {
+    background-color: #4e4e50;
+  }
+  
+  .incomplete-btn {
+    background-color: #c0c0c0;
+  }
+  
+  .incomplete-btn:hover {
+    background-color: #b0b0b0;
+  }
+  
+  /* Delete button */
+  .delete-btn {
+    background-color: #ff6347; 
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff4c29;
+    box-shadow: 0 4px 12px rgba(255, 99, 71, 0.3);
+  }
+  
+  /* Todo List */
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    background-color: #333336; 
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .todo-item:hover {
+    background-color: #4a4a4d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Completed tasks */
+  .completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Todo item text */
+  .todo-item h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+  
+  .todo-item p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #ccc;
+  }
+  

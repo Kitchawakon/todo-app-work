@@ -1,0 +1,119 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #B7E0FF; /* สีหลัก */
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #FFF5CD; /* สีรอง */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #666;
+}
+
+.input-field {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #FFCFB3; /* สีส้มอ่อน */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #E78F81; /* สีส้มเข้มเมื่อ hover */
+}
+
+.create-btn {
+  background-color: #FFCFB3; /* สีส้มอ่อนสำหรับปุ่มสร้างงาน */
+}
+
+.create-btn:hover {
+  background-color: #E78F81; /* เปลี่ยนเป็นส้มเข้มเมื่อ hover */
+}
+
+.view-btn {
+  background-color: #FFCFB3; /* สีส้มอ่อนสำหรับปุ่มแสดงงาน */
+}
+
+.view-btn:hover {
+  background-color: #E78F81; /* เปลี่ยนเป็นส้มเข้มเมื่อ hover */
+}
+
+.close-btn {
+  background-color: #E78F81; /* สีส้มเข้มสำหรับปุ่มปิด */
+  color: white;
+  margin-left: 10px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background-color: #FFF5CD; /* สีรองสำหรับรายการ TODO */
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.status-btn {
+  background-color: #B7E0FF; /* สีหลัก */
+}
+
+.delete-btn {
+  background-color: #E78F81; /* สีส้มเข้ม */
+}
+
+.delete-btn:hover, .status-btn:hover {
+  opacity: 0.8; /* ทำให้ปุ่มสีอ่อนลงเมื่อ hover */
+}
+
+@media (max-width: 600px) {
+  .input-field {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
