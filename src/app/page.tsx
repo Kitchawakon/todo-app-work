@@ -40,7 +40,7 @@ export default function Home() {
   // สร้างงานใหม่
   const handleCreateTodo = () => {
     if (!name || !description || !duedate) {
-      alert("Please fill in all fields.");
+      alert("โปรดใส่ข้อมูลให้ครบ");
       return;
     }
 
@@ -115,17 +115,17 @@ export default function Home() {
     <div className="page">
       <h1>TODO List</h1>
       <div>
-        <h2>Create New Task</h2>
+        <h2>สร้างรายการ สิ่งที่อยากทำ</h2>
         <input
           type="text"
-          placeholder="Task Name"
+          placeholder="สิ่งที่อยากทำ"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="input-field"
         />
         <input
           type="text"
-          placeholder="Task Description"
+          placeholder="รายละเอียด"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className="input-field"
@@ -138,13 +138,13 @@ export default function Home() {
           className="input-field"
         />
         <button onClick={handleCreateTodo} className="btn create-btn">
-          Add Task
+          เพิ่มรายการ
         </button>
         <button onClick={() => {
           fetchTodos();
           setShowTodos(true); 
         }} className="btn view-btn">
-          View All Tasks
+          ดูสิ่งที่ต้องทำทั้งหมด
         </button>
         {showTodos && ( 
           <button onClick={() => setShowTodos(false)} className="btn close-btn">
